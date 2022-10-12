@@ -10,10 +10,10 @@ Run Docker commands from repo root
 
 ```
 docker run -d -p [PORT]:1883 \
--v /usr/local/bin/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf \
+-v /usr/local/bin/mosquitto/conf.d:/mosquitto/config/conf.d \
 -v /usr/local/bin/mosquitto/passwd:/etc/mosquitto/passwd \
 -v /usr/local/bin/mosquitto/data:/mosquitto/data \
--v /var/log/mosquitto/mosquitto.log:/mosquitto/log/mosquitto.log \
+-v /usr/local/bin/mosquitto/log:/mosquitto/log \
 --name mqtt --restart=always ghcr.io/harness-iot/mqtt:[version]|latest
 ```
 
