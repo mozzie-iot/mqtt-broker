@@ -17,8 +17,6 @@ docker run -d -p [PORT]:1883 \
 --name mqtt --restart=always ghcr.io/harness-iot/mqtt:[version]|latest
 ```
 
-Note: port must match listener port specified in `mosquitto.conf`
-
 ## Push:
 
 1. `docker push ghcr.io/harness-iot/mqtt:[version]`
