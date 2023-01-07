@@ -9,12 +9,7 @@ Run Docker commands from repo root
 ## Run (development):
 
 ```
-docker run -d \
--v /usr/local/bin/mosquitto/conf.d:/mosquitto/config/conf.d \
--v /usr/local/bin/mosquitto/passwd:/etc/mosquitto/passwd \
--v /usr/local/bin/mosquitto/data:/mosquitto/data \
--v /usr/local/bin/mosquitto/log:/mosquitto/log \
---name mqtt --restart=always ghcr.io/harness-iot/mqtt:[version]|latest
+docker-compose up
 ```
 
 ## Push:
