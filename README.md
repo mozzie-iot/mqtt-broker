@@ -2,15 +2,16 @@
 
 Run Docker commands from repo root
 
-## Build:
-
-`docker build -t ghcr.io/huebot-iot/mqtt:[version] -t ghcr.io/huebot-iot/mqtt:latest .`
-
 ## Run (development):
 
 ```
 docker-compose up
 ```
+
+
+## Build:
+
+`docker build -t ghcr.io/huebot-iot/mqtt:[version] -t ghcr.io/huebot-iot/mqtt:latest .`
 
 ## Push:
 
