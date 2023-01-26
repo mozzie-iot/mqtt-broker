@@ -7,10 +7,10 @@ services:
       dockerfile: Dockerfile
     restart: always
     volumes:
-      - /usr/local/bin/mosquitto/huebot.conf:/mosquitto/config/conf.d/huebot.conf
+      - /usr/local/bin/mosquitto/conf.d:/mosquitto/config/conf.d
+      - /usr/local/bin/config.json:/etc/mosquitto/huebot.config
       - /usr/local/bin/mosquitto/data:/mosquitto/data
       - /usr/local/bin/mosquitto/log:/mosquitto/log
-      - /usr/local/bin/config.json:/etc/mosquitto/huebot.config
     ports:
       - 18831:1883
     networks:
