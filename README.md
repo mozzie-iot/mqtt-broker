@@ -20,7 +20,7 @@ docker-compose up
 
 ## Logs
 
-`sudo cat /usr/local/bin/mosquitto/log/mosquitto.log`
+`cat /usr/local/bin/mosquitto/log/mosquitto.log`
 
 ## Notes
 
