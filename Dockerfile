@@ -1,7 +1,5 @@
 FROM eclipse-mosquitto:2.0.15
 
-RUN apk add jq
-
 COPY --chown=1883:1883 entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 
