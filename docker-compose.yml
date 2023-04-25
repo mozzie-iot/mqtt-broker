@@ -10,8 +10,6 @@ services:
       - MQTT_USERNAME=$MQTT_USERNAME
       - MQTT_PASSWORD=$MQTT_PASSWORD
     volumes:
-      - /usr/local/bin/mosquitto/conf.d:/mosquitto/config/conf.d
-      - /usr/local/bin/config.json:/etc/mosquitto/huebot.config
       - /usr/local/bin/mosquitto/data:/mosquitto/data
       - /usr/local/bin/mosquitto/log:/mosquitto/log
     ports:
