@@ -1,5 +1,5 @@
 FROM eclipse-mosquitto:2.0.15
-LABEL org.opencontainers.image.source https://github.com/huebot-iot/hub-mqtt-broker
+LABEL org.opencontainers.image.source https://github.com/huebot-iot/mqtt-broker
 
 COPY --chown=1883:1883 entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
